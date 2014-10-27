@@ -65,7 +65,7 @@
          "url" : "git://github.com/binary-com/perl-App-Base"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_contributors" : [
       "Calum Halcrow",
       "Chris Travers",
