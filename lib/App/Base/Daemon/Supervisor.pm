@@ -2,7 +2,7 @@ package App::Base::Daemon::Supervisor;
 use 5.010;
 use Moose::Role;
 with 'App::Base::Daemon';
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 $VERSION = eval $VERSION;
 
 =head1 NAME
@@ -354,6 +354,7 @@ sub DEMOLISH {
     return;
 }
 
+no Moose::Role;
 1;
 
 __END__

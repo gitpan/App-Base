@@ -2,7 +2,7 @@ package App::Base::Daemon;
 use 5.010;
 use Moose::Role;
 with 'App::Base::Script::Common';
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 $VERSION = eval $VERSION;
 
 =head1 NAME
@@ -11,7 +11,7 @@ App::Base::Daemon - A lazy person's tool for writing self-documenting, self-moni
 
 =head1 VERSION
 
-This document describes App::Base version 0.03
+This document describes App::Base version 0.04
 
 =head1 SYNOPSIS
 
@@ -71,7 +71,7 @@ free, in addition to those provided by App::Base::Script::Common. They are:
 =head2 --no-fork
 
 Rather than double-forking and detaching from the console, the daemon
-runs in the foreground (parent) process. Useful for debugging or 
+runs in the foreground (parent) process. Useful for debugging or
 interactive invocations.
 
 =head2 --pid-file
@@ -349,6 +349,7 @@ sub error {
     return exit(-1);
 }
 
+no Moose::Role;
 1;
 
 __END__

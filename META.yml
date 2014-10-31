@@ -40,10 +40,11 @@ resources:
   homepage: https://github.com/binary-com/perl-App-Base
   license: http://dev.perl.org/licenses/
   repository: git://github.com/binary-com/perl-App-Base
-version: '0.03'
+version: '0.04'
 x_contributors:
   - 'Calum Halcrow'
   - 'Chris Travers'
+  - 'Fayland Lam <fayland@gmail.com>'
   - 'Jean-Yves Sireau'
   - 'Kaveh Mousavi Zamani'
   - 'Matt Miller'

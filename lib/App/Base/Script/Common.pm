@@ -1,7 +1,7 @@
 package App::Base::Script::Common;
 use 5.010;
 use Moose::Role;
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 $VERSION = eval $VERSION;
 
 =head1 NAME
@@ -10,7 +10,7 @@ App::Base::Script::Common - Behaviors common to App::Base::Script and App::Base:
 
 =head1 VERSION
 
-This document describes App::Base version 0.03
+This document describes App::Base version 0.04
 
 =head1 DESCRIPTION
 
@@ -66,7 +66,7 @@ requires '__run';
 =head2 error
 
 All App::Base::Script::Common-implementing classes must have an
-error() method that handles exceptional cases which also 
+error() method that handles exceptional cases which also
 require a shutdown of the running script/daemon/whatever.
 
 =cut
@@ -416,6 +416,7 @@ sub __error {
     exit(-1);
 }
 
+no Moose::Role;
 1;
 
 __END__

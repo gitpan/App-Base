@@ -6,7 +6,7 @@ App::Base::Script - A truly lazy person's tool for writing self-documenting, sel
 
 =head1 VERSION
 
-This document describes App::Base version 0.03
+This document describes App::Base version 0.04
 
 =head1 SYNOPSIS
 
@@ -43,7 +43,7 @@ See also, L<App::Base::Script::Common> "REQUIRED METHODS"
 
 use Moose::Role;
 with 'App::Base::Script::Common';
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 $VERSION = eval $VERSION;
 use Carp qw( croak );
 use Config;
@@ -93,6 +93,7 @@ sub error {
     return $self->__error(@_);
 }
 
+no Moose::Role;
 1;
 
 __END__
